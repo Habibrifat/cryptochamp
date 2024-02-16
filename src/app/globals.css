@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section-container {
+  background-image: url("../../public//images/crypto-bg-min.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.shadow-top {
+  background-image: url("../../public/images/top\ shadow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.token1 {
+  background-image: url("../../public/images/pool\ 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.token2 {
+  background-image: url("../../public/images/pool\ 2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.group {
+  background-image: url("../../public/images/Group.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.group1 {
+  background-image: url("../../public/images/Group-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.group2 {
+  background-image: url("../../public/images/Group-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.link-active-bg {
+  background: url("../../public/images/Rectangle\ 14_2.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.popup-content {
+  background-image: url("../../public/images/borders.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.group4 {
+  background-image: url("./../../public/images/Group_4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.popup_confirm_btn {
+  background-image: url("../../public/images/Confirm.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rectangle_btn1 {
+  background-image: url("../../public/images/rectangle_25.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rectangle_btn2 {
+  background-image: url("../../public/images/Max.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
