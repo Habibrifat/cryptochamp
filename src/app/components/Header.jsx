@@ -152,41 +152,43 @@ const Header = () => {
           </div>
         </div>
       </div>
-      {/* Mobile an tablet */}
+      {/* Mobile and tablet */}
       <div className="lg:hidden pb-28">
         <div className=" fixed top-0 left-0 right-0 z-[9999]">
-          <div className="flex justify-around items-center gap-x-4 shadow-top">
+          <div className="flex justify-between items-center gap-x-4 shadow-top ms:px-8 px-2">
             <div className="my-4 sm:my-8">
               <Link href={"/"}>
                 <Image
                   src={crypto_logo}
                   alt="crypto_logo"
-                  className="w-28 sm:w-full"
+                  className="w-28 min-w-24 sm:w-full"
                 />
               </Link>
             </div>
-            <div className="border-4 border-[#180902] bg-[#180902] text-white rounded-2xl">
-              <div className="bg-[#24150C] w-[90px] sm:w-[120px] h-[30px] sm:h-[40px] rounded-2xl relative flex justify-center items-center">
-                <Image
-                  src={Binance}
-                  alt="Binance"
-                  className=" absolute -left-4 sm:-left-6 w-8 sm:w-12"
-                />
-                <span className=" absolute top-2 left-8 sm:left-12 font-bold text-white text-xs sm:text-base">
-                  16453
-                </span>
+            <div className=" flex gap-x-4 sm:gap-x-14">
+              <div className="border-4 border-[#180902] bg-[#180902] text-white rounded-2xl">
+                <div className="bg-[#24150C] w-[90px] sm:w-[120px] h-[30px] sm:h-[40px] rounded-2xl relative flex justify-center items-center">
+                  <Image
+                    src={Binance}
+                    alt="Binance"
+                    className=" absolute -left-4 sm:-left-6 w-8 sm:w-12"
+                  />
+                  <span className=" absolute top-2 left-8 sm:left-12 font-bold text-white text-xs sm:text-base">
+                    16453
+                  </span>
+                </div>
               </div>
-            </div>
-            <div className="border-4 border-[#180902] bg-[#180902] text-white rounded-2xl">
-              <div className="bg-[#24150C] w-[90px] h-[30px] sm:w-[100px] sm:h-[40px] rounded-2xl relative flex justify-center items-center">
-                <Image
-                  src={Farme}
-                  alt="Farme"
-                  className=" absolute -left-4 sm:-left-6 w-8 sm:w-12"
-                />
-                <span className=" absolute  top-2 left-8 font-bold text-white text-xs sm:text-base">
-                  0x...E8
-                </span>
+              <div className="border-4 border-[#180902] bg-[#180902] text-white rounded-2xl">
+                <div className="bg-[#24150C] w-[90px] h-[30px] sm:w-[100px] sm:h-[40px] rounded-2xl relative flex justify-center items-center">
+                  <Image
+                    src={Farme}
+                    alt="Farme"
+                    className=" absolute -left-4 sm:-left-6 w-8 sm:w-12"
+                  />
+                  <span className=" absolute  top-2 left-8 font-bold text-white text-xs sm:text-base">
+                    0x...E8
+                  </span>
+                </div>
               </div>
             </div>
           </div>

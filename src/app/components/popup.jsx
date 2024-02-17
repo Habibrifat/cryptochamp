@@ -5,6 +5,7 @@ import { Fragment, useState } from "react";
 import ETH from "../../../public/images/eth.png";
 import CCG from "../../../public/images/logo CCG no bg 3.png";
 import closeBtn from "../../../public/images/Group_3.png";
+import RangeSlider from "./rangSlider";
 
 function MyPopup({ isOpen, closePopup }) {
   return (
@@ -52,44 +53,43 @@ function MyPopup({ isOpen, closePopup }) {
                 </div>
                 <span className=" text-[#B9ADA6] text-xs">~ 284, 59 $</span>
               </div>
-              <div className="bg-[#813616] border-[#351909] w-72 h-2 rounded-lg border-1 relative">
-                <div className="bg-[#01E18B] w-12 h-2 rounded-lg">
-                  <Image
-                    src={CCG}
-                    alt="CCG"
-                    className="w-4 absolute -top-2 left-10"
-                  />
-                  <span className="text-[#B8B8B8] text-xs absolute top-5 left-10">
-                    13%
-                  </span>
-                </div>
-              </div>
+              {/* range slider */}
+              <RangeSlider />
+              {/* range slider */}
               <div className=" flex flex-row gap-x-2 mt-4">
-                <div className="rectangle_btn1 text-center w-12 h-8 object-cover">
-                  <span className="text-[#0C572F] text-xs font-bold">25%</span>
-                </div>
-                <div className="rectangle_btn1 text-center w-12 h-8 object-cover">
-                  <span className="text-[#0C572F] text-xs font-bold">50%</span>
-                </div>
-                <div className="rectangle_btn1 text-center w-12 h-8 object-cover">
-                  <span className="text-[#0C572F] text-xs font-bold">75%</span>
-                </div>
-                <div className="rectangle_btn2 text-center w-20 h-8 object-cover">
-                  <span className="text-[#0C572F] text-xs font-bold">Max</span>
-                </div>
+                <button className="rectangle_btn1 text-center w-12 h-8 object-cover">
+                  <span className="text-[#0C572F] leading-8 text-xs font-bold">
+                    25%
+                  </span>
+                </button>
+                <button className="rectangle_btn1 text-center w-12 h-8 object-cover">
+                  <span className="text-[#0C572F] leading-8 text-xs font-bold">
+                    50%
+                  </span>
+                </button>
+                <button className="rectangle_btn1 text-center w-12 h-8 object-cover">
+                  <span className="text-[#0C572F] leading-8 text-xs font-bold">
+                    75%
+                  </span>
+                </button>
+                <button className="rectangle_btn2 text-center w-20 h-8 object-cover">
+                  <span className="text-[#0C572F] leading-8 text-xs font-bold">
+                    Max
+                  </span>
+                </button>
               </div>
 
-              <div className="popup_confirm_btn w-52 h-14 text-center my-4">
+              <button className="popup_confirm_btn w-52 h-14 text-center my-4">
                 <span className="text-[#753901]  font-bold  text-base leading-[3rem] ">
                   Confirm
                 </span>
-              </div>
-              <div
+              </button>
+              <button
                 className="popupclosebtn absolute w-10 top-0 right-0 cursor-pointer"
                 onClick={closePopup}
               >
                 <Image src={closeBtn} alt="closeBtn" />
-              </div>
+              </button>
             </div>
           </Transition.Child>
         </div>
